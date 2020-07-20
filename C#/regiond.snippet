@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>region definition</Title>
+			<Shortcut>regiond</Shortcut>
+			<Description>Create basic region definition</Description>
+			<Author>CRONIER antoine</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>classname</ID>
+					<ToolTip>Class name</ToolTip>
+					<Function>ClassName()</Function>
+					<Default>ClassNamePlaceholder</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+			#region static variables
+			#endregion
+
+			#region class variables
+			#endregion
+			
+			#region attributes
+			#endregion
+			
+			#region constructors
+			public $classname$ ()
+			{
+				$end$
+			}
+			#endregion
+
+			#region properties
+			#endregion
+			
+			#region static functions
+			#endregion
+
+			#region functions
+			#endregion
+			]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
